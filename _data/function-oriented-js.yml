@@ -1,6 +1,6 @@
 - title: Function Oriented JavaScript
 
-- title: Functional Concepts
+- heading: Functional Concepts
   bullets:
     - Higher-order function
     - Immutability
@@ -9,7 +9,7 @@
     - Recursion
     - Partial application
 
-- title: Functional Concepts
+- heading: Functional Concepts
   bullets:
     - Higher-order function
     - <strike>Immutability</strike>
@@ -18,7 +18,7 @@
     - <strike>Tail</strike> Recursion
     - Partial application
 
-- title: Higher-order Functions
+- heading: Higher-order Functions
   bullets:
     - Assign functions to variables
     - Pass functions as arguments
@@ -28,7 +28,7 @@
 
 - code: [fib.hs, fib.js]
 
-- text: "Memoization is a simple optimization… Caching is like a deal with the devil." - Douglas Crockford
+- text: "Memoization is a simple optimization… Caching is like a deal with the devil.  Douglas Crockford"
   code: memo.js
 
 - title: List Processing
