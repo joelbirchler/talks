@@ -14,9 +14,9 @@ The `layout` property should be `default` for slideshows. The `title` will appea
 
 The slideshow yaml is an array of slides. Each slide can have the following properties:
 	
-	* `title`: Titled-styled text
-	* `heading`: Heading-styled text
-	* `text`: Body text
-	* `bullets`: An array of text for bullets
-	* `code`: The text or array of scripts to display. Script files should be placed in `_includes`.
-	* `style`: The style of the slide. See list below.
+* `title`: Titled-styled text
+* `heading`: Heading-styled text
+* `text`: Body text
+* `bullets`: An array of text for bullets
+* `code`: The text or array of scripts to display. Script files should be placed in `_includes`.
+* `style`: The style of the slide. See list below.
