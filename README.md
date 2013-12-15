@@ -2,8 +2,6 @@ We are going to take a look at functional programming (mostly with Haskell) and 
 
 TODO:
 
-* Stub in content
-* http://fittextjs.com/
 * Make it look good
 * Run example code through tests
 * ???
