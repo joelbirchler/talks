@@ -7,6 +7,18 @@ body {
   background: #252525;
 }
 
+/*
+
+clay - 171, 63, 49
+sky - 68, 159, 120
+slate - 48, 53, 60
+gray - 234
+
+try a subtle radial spotlight
+
+
+*/
+
 section {
   border-bottom: 1px solid green;
   height: 90vh;
