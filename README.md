@@ -2,7 +2,5 @@ We are going to take a look at functional programming (mostly with Haskell) and 
 
 TODO:
 
+* Describe how to set up a slideshow
 * Make it look good
-* Run example code through tests
-* ???
-* Profit
