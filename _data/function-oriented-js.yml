@@ -1,0 +1,41 @@
+- title: Function Oriented JavaScript
+
+- title: Functional Concepts
+  bullets:
+    - Higher-order function
+    - Immutability
+    - Referential transparency
+    - List Processing
+    - Recursion
+    - Partial application
+
+- title: Functional Concepts
+  bullets:
+    - Higher-order function
+    - <strike>Immutability</strike>
+    - <strike>Referential transparency</strike>
+    - List Processing
+    - <strike>Tail</strike> Recursion
+    - Partial application
+
+- title: Higher-order Functions
+  bullets:
+    - Assign functions to variables
+    - Pass functions as arguments
+    - Return functions
+
+- text: Don't accidentally make an unneccessary anonymous function (Examples about using functions)
+
+- code: [fib.hs, fib.js]
+
+- text: "Memoization is a simple optimization… Caching is like a deal with the devil." - Douglas Crockford
+  code: memo.js
+
+- title: List Processing
+  text: map, reduce, select, reject
+
+- text: simple function composition (no curry)
+
+- text: currying, partial application with something like ajax get/post
+
+- text: scoreunder for correct order. functions first! show bind example using both map and curry
