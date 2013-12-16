@@ -11,7 +11,7 @@
   </head>
   <body>
     {% for slide in site.data[{{page.slides}}] %}
-        <section>
+        <section class="{{ slide.style }}">
           
           {% if slide.title %}
             <h1>{{ slide.title }}</h1>

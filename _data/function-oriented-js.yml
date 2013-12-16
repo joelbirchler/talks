@@ -1,7 +1,8 @@
-- title: Function Oriented JavaScript
-  style: clay-inverse
+- style: clay
+  title: Function Oriented JavaScript
 
-- heading: Functional Concepts
+- style: mold
+  heading: Functional Concepts
   bullets:
     - Higher-order function
     - Immutability
@@ -10,7 +11,8 @@
     - Recursion
     - Partial application
 
-- heading: Functional Concepts
+- style: mold
+  heading: Functional Concepts
   bullets:
     - Higher-order function
     - <strike>Immutability</strike>
@@ -19,23 +21,29 @@
     - <strike>Tail</strike> Recursion
     - Partial application
 
-- heading: Higher-order Functions
+- style: slate
+  heading: Higher-order Functions
   bullets:
     - Assign functions to variables
     - Pass functions as arguments
     - Return functions
 
-- text: Don't accidentally make an unneccessary anonymous function (Examples about using functions)
+- style: mold
+  text: Don't accidentally make an unneccessary anonymous function <strong>(Examples about using functions)</strong>
 
-- code: [fib.hs, fib.js]
+- style: slate
+  code: [fib.hs, fib.js]
 
-- text: "Memoization is a simple optimization… Caching is like a deal with the devil.  Douglas Crockford"
+- style: clay
+  text: <q>Memoization is a simple optimization… Caching is like a deal with the devil.</q> <strong>Douglas Crockford</strong>
   code: memo.js
 
-- title: List Processing
+- style: slate
+  title: List Processing
   text: map, reduce, select, reject
 
-- text: simple function composition (no curry)
+- style: clay
+  text: simple function composition (no curry)
 
 - text: currying, partial application with something like ajax get/post
 
