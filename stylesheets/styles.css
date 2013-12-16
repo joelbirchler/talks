@@ -1,7 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Belgrano);
+
 body {
   padding: 0px 0 20px 0px;
   margin: 0px;
-  font: 7vh/1.7 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 7vh/1.7 "Belgrano", serif;
   color: #f0e7d5;
   font-weight: normal;
   background: #252525;
@@ -29,7 +31,7 @@ section {
 h1, h2, h3, h4, h5, h6 {
   color: #e8e8e8;
   margin: 0 0 2vh;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Belgrano", serif;
   font-weight: normal;
 }
 
@@ -49,7 +51,6 @@ h2 {
   font-size: 10vh;
 }
 
-
 a {
   color: #ffcc00;
   font-weight: 400;
@@ -61,12 +62,12 @@ a:hover {
 }
 
 strong {
-  font-family: 'OpenSansBold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "Belgrano", serif !important;
   font-weight: normal;
 }
 
 code {
-  font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color: #efefef;
 }
 
