@@ -4,17 +4,16 @@ body {
   padding: 0px 0 20px 0px;
   margin: 0px;
   font: 7vh/1.7 "Belgrano", serif;
-  color: #f0e7d5;
+  color: #fff;
   font-weight: normal;
-  background: #252525;
+  background: #30353C;
 }
 
 /*
 
-clay - 171, 63, 49
-sky - 68, 159, 120
-slate - 48, 53, 60
-gray - 234
+clay - #AB3F31
+sky - #449F78
+slate - #40555C
 
 try a subtle radial spotlight
 
@@ -22,14 +21,14 @@ try a subtle radial spotlight
 */
 
 section {
-  border-bottom: 1px solid green;
   height: 90vh;
   padding: 5vh;
   overflow: hidden;
+  background: #AB3F31;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #e8e8e8;
+  color: #fff;
   margin: 0 0 2vh;
   font-family: "Belgrano", serif;
   font-weight: normal;
@@ -37,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul, ol, table, pre, dl {
   margin: 0 0 4vh;
+  color: #ffebcb;
 }
 
 h1, h2, h3 {
@@ -52,29 +52,33 @@ h2 {
 }
 
 a {
-  color: #ffcc00;
-  font-weight: 400;
-  text-decoration: none;
+  color: #fff;
 }
 
 a:hover {
-  color: #ffeb9b;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 strong {
+  color: #ffcc00;
   font-family: "Belgrano", serif !important;
   font-weight: normal;
 }
 
+strike {
+  opacity: 0.5;
+}
+
 code {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color: #efefef;
 }
 
 pre {
   font-size: 70%;
-  padding: 4vh;
-  background: #191919;
+  padding: 3vh;
+  background: #fff;
+  box-shadow: 8px 8px 0px 0 rgba(0, 0, 0, 0.3);
+  color: #333;
   overflow: auto;
   overflow-y: hidden;
   margin: 0 0 4vh;
