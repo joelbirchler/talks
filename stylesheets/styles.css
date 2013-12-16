@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 2vh;
   font-family: "Belgrano", serif;
   font-weight: normal;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 p, ul, ol, table, pre, dl {
@@ -52,6 +53,7 @@ strong {
   color: #ffcc00;
   font-family: "Belgrano", serif !important;
   font-weight: normal;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
 q:before {
