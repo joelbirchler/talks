@@ -91,6 +91,10 @@ section.mold { background: #449F78; }
 section.mold p, section.mold ul, section.mold ol { color: #dbffdb;}
 section.mold strong { color: #ccff00; }
 
+section.purple { background: #55417E; }
+section.purple p, section.purple ul, section.purple ol { color: #d5b1fe;}
+section.purple strong { color: #bb22ff; }
+
 section.slate { background: #40555C; }
 section.slate p, section.slate ul, section.slate ol { color: #dbebff;}
 section.slate strong { color: #00ccff; }

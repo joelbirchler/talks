@@ -11,10 +11,10 @@
     - Recursion
     - Partial application
 
-- style: mold
+- style: purple
   heading: Functional Concepts
   bullets:
-    - Higher-order function
+    - Higher-order <strong>function</strong>
     - <strike>Immutability</strike>
     - <strike>Referential transparency</strike>
     - List Processing
