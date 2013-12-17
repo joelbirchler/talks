@@ -14,22 +14,36 @@ $(function() {
     }
 
     var jumpTo = function(index) {
-        $body.animate({ scrollTop: $section(index).offset().top }, 'fast');
+        window.location.hash = '#' + index;
+        $body.animate({ scrollTop: $section(index).offset().top }, 200);
     };
 
     var current = function() {
         // current slide is the one that's top is in the top half of the screen
-        return Math.floor($sections.length * ($body.scrollTop() + 1) / $body.height());
+        var i = Math.floor($sections.length * ($body.scrollTop() + 1) / $body.height());
+        return (i < 0) ? 0 : i;
     };
 
     var jumpToNext = function() {
         jumpTo(current() + 1);
-    }
+    };
+
+    var jumpToHash = function() {
+        var hash = window.location.hash.substring(1);
+        jumpTo(parseInt(hash) || 0);
+    };
 
     $body
         .click(jumpToNext)
         .keypress(jumpToNext);
 
-    jumpTo(0);
+    
+    //window.onhashchange = jumpToHash;
+    window.onscroll = function() {
+        var index = current();
+        window.location.hash = '#' + index;
+    };
+
+    jumpToHash();
     
 });

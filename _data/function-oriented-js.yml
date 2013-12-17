@@ -4,7 +4,7 @@
 - style: mold
   heading: Functional Concepts
   bullets:
-    - Higher-order function
+    - Higher-order functions
     - Immutability
     - Referential transparency
     - List Processing
@@ -12,9 +12,9 @@
     - Partial application
 
 - style: purple
-  heading: Functional Concepts
+  heading: Functional Concepts <strong>in JS</strong>
   bullets:
-    - Higher-order <strong>function</strong>
+    - Higher-order functions
     - <strike>Immutability</strike>
     - <strike>Referential transparency</strike>
     - List Processing
