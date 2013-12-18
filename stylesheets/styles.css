@@ -3,7 +3,7 @@
 body {
   padding: 0px;
   margin: 0px;
-  font: 7vh/1.7 "Belgrano", serif;
+  font: 6vh/1.7 "Belgrano", serif;
   color: #fff;
   font-weight: normal;
   background: #000;
@@ -18,7 +18,7 @@ section {
 
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
-  margin: 0 0 2vh;
+  margin: 0;
   font-family: "Belgrano", serif;
   font-weight: normal;
   text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
@@ -34,11 +34,11 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 16vh;
+  font-size: 14vh;
 }
 
 h2 {
-  font-size: 10vh;
+  font-size: 9vh;
 }
 
 a {
@@ -75,8 +75,8 @@ code {
 }
 
 pre {
-  font-size: 70%;
-  padding: 3vh;
+  font-size: 65%;
+  padding: 2vh;
   background: #fff;
   box-shadow: 8px 8px 0px 0 rgba(0, 0, 0, 0.3);
   color: #333;

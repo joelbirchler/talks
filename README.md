@@ -1,5 +1,14 @@
 This project uses [GitHub Pages](http://pages.github.com/) to generate slideshows from yaml. You can see the a list of the various slideshows here: http://joelbirchler.github.io/talks/
 
+
+# TODO
+
+* Browser testing (so far this is only tested on Mac/Chrome)
+* Metatalk how-to
+* Remote control scrolling
+* Slide in transition hooks (or automatically for depth)
+
+
 # Creating a Presentation
 
 The content for a slideshow is written in yaml and located in the `_data` folder. You also need to create an html file in the root with a [front-matter](http://jekyllrb.com/docs/frontmatter/) that describes the talk. Like this:

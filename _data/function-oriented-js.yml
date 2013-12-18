@@ -29,10 +29,14 @@
     - Return functions
 
 - style: mold
-  text: Don't accidentally make an unneccessary anonymous function <strong>(Examples about using functions)</strong>
+  code:
+    - (<strong>Don't</strong> do this...)
+    - unnecessary1.js
+    - (<strong>Do</strong> this...)
+    - unnecessary2.js
 
 - style: slate
-  code: [fib.hs, fib.js]
+  code: [(Haskell), fib.hs, (JavaScript), fib.js]
 
 - style: clay
   text: <q>Memoization is a simple optimization… Caching is like a deal with the devil.</q> <strong>Douglas Crockford</strong>
