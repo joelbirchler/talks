@@ -23,21 +23,22 @@
     <p>{{ code | remove: '(' | remove: ')' }}</p>
   {% else %}
     {% capture lang %}{{ code | split:'.' | last }}{% endcapture %}
+    {% capture file %}{{page.slides}}/{{code}}{% endcapture %}
     {% case lang %}
     {% when 'rb' %}
-      {% highlight ruby %}{% include {{code}} %}{% endhighlight %}
+      {% highlight ruby %}{% include  %}{% endhighlight %}
     {% when 'py' %}
-      {% highlight python %}{% include {{code}} %}{% endhighlight %}
+      {% highlight python %}{% include {{file}} %}{% endhighlight %}
     {% when 'er' %}
-      {% highlight erlang %}{% include {{code}} %}{% endhighlight %}
+      {% highlight erlang %}{% include {{file}} %}{% endhighlight %}
     {% when 'hs' %}
-      {% highlight haskell %}{% include {{code}} %}{% endhighlight %}
+      {% highlight haskell %}{% include {{file}} %}{% endhighlight %}
     {% when 'java' %}
-      {% highlight java %}{% include {{code}} %}{% endhighlight %}
+      {% highlight java %}{% include {{file}} %}{% endhighlight %}
     {% when 'lisp' or 'cl' %}
-      {% highlight lisp %}{% include {{code}} %}{% endhighlight %}
+      {% highlight lisp %}{% include {{file}} %}{% endhighlight %}
     {% else %}
-      {% highlight javascript %}{% include {{code}} %}{% endhighlight %}
+      {% highlight javascript %}{% include {{file}} %}{% endhighlight %}
     {% endcase %}
   {% endif %}
 {% endfor %}

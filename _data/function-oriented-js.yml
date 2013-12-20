@@ -10,6 +10,7 @@
     - List Processing
     - Recursion
     - Partial application
+    - Composition
 
 - style: purple
   heading: Functional Concepts <strong>in JS</strong>
@@ -20,15 +21,33 @@
     - List Processing
     - <strike>Tail</strike> Recursion
     - Partial application
+    - Composition
 
 - style: slate
   heading: Higher-order Functions
-  bullets:
-    - Assign functions to variables
-    - Pass functions as arguments
-    - Return functions
+  code:
+    - (Assign functions to variables)
+    - higher-order1.js
 
 - style: mold
+  heading: Higher-order Functions
+  code:
+    - (Return functions from functions)
+    - higher-order2.js
+
+- style: slate
+  heading: Higher-order Functions
+  code:
+    - (Pass functions to functions)
+    - higher-order3.js
+
+- style: purple
+  head: Higher-order Functions
+  code: 
+    - (Example in another language)
+
+- style: mold
+  heading: Functions in your Functions
   code:
     - (<strong>Don't</strong> do this...)
     - unnecessary1.js
