@@ -1,6 +1,6 @@
 var tagger = function(name) {
     return function(value) {
-        return '<name>value</name>'.replace(/name/g, name).replace(/value/g, value);
+        return '<' + name + '>' + value + '</' + name + '>';
     }
 };
 
