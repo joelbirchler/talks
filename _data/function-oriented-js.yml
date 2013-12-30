@@ -19,7 +19,7 @@
     - <strike>Immutability</strike>
     - <strike>Referential transparency</strike>
     - List Processing
-    - <strike>Tail</strike> Recursion
+    - Tail Recursion <strong>(coming in ES6)</strong>
     - Partial application
     - Composition
 
