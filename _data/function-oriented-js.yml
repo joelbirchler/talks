@@ -41,11 +41,6 @@
     - (Pass functions to functions)
     - higher-order3.js
 
-- style: purple
-  head: Higher-order Functions
-  code: 
-    - (Example in another language)
-
 - style: mold
   heading: Functions in your Functions
   code:
@@ -63,7 +58,13 @@
 
 - style: slate
   title: List Processing
-  text: map, reduce, select, reject
+  code: 
+    - (In Racket...)
+    - list-processing.rkt
+
+- style: purple
+  title: List Processing
+  text: practical example of list processing with underscoreJS (grab some json, select a subset, and pluck out a value then reduce)
 
 - style: clay
   text: simple function composition (no curry)
@@ -71,3 +72,5 @@
 - text: currying, partial application with something like ajax get/post
 
 - text: scoreunder for correct order. functions first! show bind example using both map and curry
+
+- text: need some way of communicating functional thinking. so far we are just covering the tools.

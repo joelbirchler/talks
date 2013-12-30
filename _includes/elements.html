@@ -35,7 +35,7 @@
       {% highlight haskell %}{% include {{file}} %}{% endhighlight %}
     {% when 'java' %}
       {% highlight java %}{% include {{file}} %}{% endhighlight %}
-    {% when 'lisp' or 'cl' %}
+    {% when 'lisp' or 'cl' or 'rkt' %}
       {% highlight lisp %}{% include {{file}} %}{% endhighlight %}
     {% else %}
       {% highlight javascript %}{% include {{file}} %}{% endhighlight %}
