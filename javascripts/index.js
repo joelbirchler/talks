@@ -16,6 +16,9 @@ $(function() {
     var jumpTo = function(index) {
         window.location.hash = '#' + index;
         $body.animate({ scrollTop: $section(index).offset().top }, 200);
+
+        var notes = $section(index).find('div.notes');
+        if (notes.length) { console.log(notes.text()); }
     };
 
     var current = function() {

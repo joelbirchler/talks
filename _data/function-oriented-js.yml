@@ -65,6 +65,7 @@
 - style: purple
   title: List Processing
   text: practical example of list processing with underscoreJS (grab some json, select a subset, and pluck out a value then reduce)
+  notes: Example should include robots.
 
 - style: clay
   text: simple function composition (no curry)

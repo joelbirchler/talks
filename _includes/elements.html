@@ -1,3 +1,7 @@
+{% if slide.notes %}
+  <div class='notes'>{{ slide.notes }}</div>
+{% endif %}
+
 {% if slide.title %}
   <h1>{{ slide.title }}</h1>
 {% endif %}

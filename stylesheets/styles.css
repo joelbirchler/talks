@@ -85,6 +85,10 @@ pre {
   margin: 0 0 4vh;
 }
 
+div.notes {
+  display: none;
+}
+
 section.clay { background: #AB3F31; }
 section.clay p, section.clay ul, section.clay ol  { color: #ffebcb;}
 section.clay strong { color: #ffcc00; }
