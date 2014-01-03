@@ -9,8 +9,8 @@
     - Referential transparency
     - List Processing
     - Recursion
-    - Partial application
-    - Composition
+    - Partial application and Composition
+    - Lazy evaluation
 
 - style: purple
   heading: Functional Concepts <strong>in JS</strong>
@@ -20,8 +20,16 @@
     - <strike>Referential transparency</strike>
     - List Processing
     - Tail Recursion <strong>(coming in ES6)</strong>
-    - Partial application
-    - Composition
+    - Partial application and Composition
+    - <strike>Lazy evaluation</strike>
+
+- text: f(x) = ?, g(x) = ?
+  notes: |
+    Exercise with two people. One person is f(x) = 2x + 1 another is g(x) = 2x + y where y 
+    is the last result from f(x). The audience's job is to guess the implementations by poking at the
+    functions with inputs. The functions each take turns answering. The audience shouts "2!" and then
+    f replies "5". The audience says "3?" and g replies "11!" (2*3 + 5). The goal is to demonstrate that
+    side effects are hard.
 
 - style: slate
   heading: Higher-order Functions
@@ -61,17 +69,16 @@
   code: 
     - (In Racket...)
     - list-processing.rkt
+  notes: Racket is a Lisp
 
 - style: purple
   title: List Processing
-  text: practical example of list processing with underscoreJS (grab some json, select a subset, and pluck out a value then reduce)
+  text: [practical example of list processing with underscoreJS (grab some json, select a subset, and pluck out a value then reduce)]
   notes: Example should include robots.
 
 - style: clay
   text: simple function composition (no curry)
 
-- text: currying, partial application with something like ajax get/post
+- text: [currying, partial application with something like ajax get/post]
 
 - text: scoreunder for correct order. functions first! show bind example using both map and curry
-
-- text: need some way of communicating functional thinking. so far we are just covering the tools.
