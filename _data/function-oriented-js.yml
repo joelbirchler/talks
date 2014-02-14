@@ -1,28 +1,6 @@
 - style: clay
   title: Function Oriented JavaScript
 
-- style: mold
-  heading: Functional Concepts
-  bullets:
-    - Higher-order functions
-    - Immutability
-    - Referential transparency
-    - List Processing
-    - Recursion
-    - Partial application and Composition
-    - Lazy evaluation
-
-- style: purple
-  heading: Functional Concepts <strong>in JS</strong>
-  bullets:
-    - Higher-order functions
-    - <strike>Immutability</strike>
-    - <strike>Referential transparency</strike>
-    - List Processing
-    - Tail Recursion <strong>(coming in ES6)</strong>
-    - Partial application and Composition
-    - <strike>Lazy evaluation</strike>
-
 - text: f(x) = ?, g(x) = ?
   notes: |
     Exercise with two people. One person is f(x) = 2x + 1 another is g(x) = 2x + y where y 
@@ -30,6 +8,10 @@
     functions with inputs. The functions each take turns answering. The audience shouts "2!" and then
     f replies "5". The audience says "3?" and g replies "11!" (2*3 + 5). The goal is to demonstrate that
     side effects are hard.
+
+- style: mold
+  heading: Referential Transparency
+  notes: Let's talk about the concept and then React...
 
 - style: slate
   heading: Higher-order Functions
@@ -82,3 +64,16 @@
 - text: [currying, partial application with something like ajax get/post]
 
 - text: scoreunder for correct order. functions first! show bind example using both map and curry
+
+- style: purple
+  heading: Immutability
+  notes: This is kind of mind blowing to someone used to iterating with i++
+
+- heading: Recursion
+  notes: Example with head | tail summing
+
+- heading: Learn More!
+  bullets:
+    - Haskell
+    - Clojure (Lisp)
+    - Erlang/Elixir

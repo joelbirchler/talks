@@ -29,3 +29,4 @@ The slideshow yaml is an array of slides. Each slide can have the following prop
 * `bullets`: An array of text for bullets
 * `code`: The text or array of scripts to display. Script files should be placed in `_includes`.
 * `style`: The style of the slide. See list below.
+* `notes`: These will show in the JS debug console when you reach the slide.
