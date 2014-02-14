@@ -1,6 +1,17 @@
 - style: clay
   title: Function Oriented JavaScript
 
+- style: purple
+  text: |
+    <q>LISP is worth learning for a different reason — the profound enlightenment experience you will have 
+    when you finally get it. That experience will make you a better programmer for the rest of your days, even
+    if you never actually use Lisp itself a lot.</q> <strong>Eric Raymond</strong>
+
+- style: mold
+  text: |
+    <q>The reason everyone doesn't use [Lisp] is that programming languages are not merely technologies, but habits 
+    of mind as well, and nothing changes slower.</q> <strong>Paul Graham</strong>
+
 - style: slate
   heading: Higher-order Functions
   code:
@@ -43,6 +54,14 @@
   text: <q>Memoization is a simple optimization… Caching is like a deal with the devil.</q> <strong>Douglas Crockford</strong>
   code: memo.js
 
+- style: purple
+  heading: Mutable State is Hard
+  notes: |
+    This is kind of mind blowing to someone used to iterating with i++
+    jQuery soup
+    React
+    http://prog21.dadgum.com/25.html
+
 - style: slate
   code: [(Haskell), fib.hs, (JavaScript), fib.js]
 
@@ -64,10 +83,6 @@
 - text: [currying, partial application with something like ajax get/post]
 
 - text: scoreunder for correct order. functions first! show bind example using both map and curry
-
-- style: purple
-  heading: Immutability
-  notes: This is kind of mind blowing to someone used to iterating with i++
 
 - heading: Recursion
   notes: Example with head | tail summing
