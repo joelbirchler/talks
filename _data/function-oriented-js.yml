@@ -1,18 +1,6 @@
 - style: clay
   title: Function Oriented JavaScript
 
-- text: f(x) = ?, g(x) = ?
-  notes: |
-    Exercise with two people. One person is f(x) = 2x + 1 another is g(x) = 2x + y where y 
-    is the last result from f(x). The audience's job is to guess the implementations by poking at the
-    functions with inputs. The functions each take turns answering. The audience shouts "2!" and then
-    f replies "5". The audience says "3?" and g replies "11!" (2*3 + 5). The goal is to demonstrate that
-    side effects are hard.
-
-- style: mold
-  heading: Referential Transparency
-  notes: Let's talk about the concept and then React...
-
 - style: slate
   heading: Higher-order Functions
   code:
@@ -39,12 +27,24 @@
     - (<strong>Do</strong> this...)
     - unnecessary2.js
 
-- style: slate
-  code: [(Haskell), fib.hs, (JavaScript), fib.js]
+- text: f(x) = ?, g(x) = ?
+  notes: |
+    Exercise with two people. One person is f(x) = 2x + 1 another is g(x) = 2x + y where y 
+    is the last result from f(x). The audience's job is to guess the implementations by poking at the
+    functions with inputs. The functions each take turns answering. The audience shouts "2!" and then
+    f replies "5". The audience says "3?" and g replies "11!" (2*3 + 5). The goal is to demonstrate that
+    side effects are hard.
+
+- style: mold
+  heading: Referential Transparency
+  notes: Let's talk about the concept and then React...
 
 - style: clay
   text: <q>Memoization is a simple optimization… Caching is like a deal with the devil.</q> <strong>Douglas Crockford</strong>
   code: memo.js
+
+- style: slate
+  code: [(Haskell), fib.hs, (JavaScript), fib.js]
 
 - style: slate
   title: List Processing
