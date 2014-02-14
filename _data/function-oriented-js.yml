@@ -4,11 +4,8 @@
 - style: purple
   text: |
     <q>LISP is worth learning for a different reason — the profound enlightenment experience you will have 
-    when you finally get it. That experience will make you a better programmer for the rest of your days, even
-    if you never actually use Lisp itself a lot.</q> <strong>Eric Raymond</strong>
+    when you finally get it.</q> <strong>Eric Raymond</strong>
 
-- style: mold
-  text: |
     <q>The reason everyone doesn't use [Lisp] is that programming languages are not merely technologies, but habits 
     of mind as well, and nothing changes slower.</q> <strong>Paul Graham</strong>
 
@@ -61,6 +58,11 @@
     jQuery soup
     React
     http://prog21.dadgum.com/25.html
+    x = 5
+    x = x + 1 (woah! wait! I thought x was 5?) ... oo encapsulation of state vs functional anti-state (react, etc might be good here)
+
+- heading: Recursion
+  notes: Example with head | tail summing
 
 - style: slate
   code: [(Haskell), fib.hs, (JavaScript), fib.js]
@@ -83,9 +85,6 @@
 - text: [currying, partial application with something like ajax get/post]
 
 - text: scoreunder for correct order. functions first! show bind example using both map and curry
-
-- heading: Recursion
-  notes: Example with head | tail summing
 
 - heading: Learn More!
   bullets:
