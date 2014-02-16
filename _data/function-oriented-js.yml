@@ -1,13 +1,21 @@
 - style: clay
   title: Function Oriented JavaScript
+  notes: |
+    I call this talk "Function Oriented JavaScript", but we're really going to be looking at other
+    functional languages and attempting to extract good habits from them and apply them to JavaScript. 
+
 
 - style: purple
   text: |
-    <q>LISP is worth learning for a different reason — the profound enlightenment experience you will have 
-    when you finally get it.</q> <strong>Eric Raymond</strong>
+    <p><q>LISP is worth learning for a different reason — the profound enlightenment experience you will have 
+    when you finally get it.</q> <strong>Eric Raymond</strong></p>
 
-    <q>The reason everyone doesn't use [Lisp] is that programming languages are not merely technologies, but habits 
-    of mind as well, and nothing changes slower.</q> <strong>Paul Graham</strong>
+    <p><q>The reason everyone doesn't use [Lisp] is that programming languages are not merely technologies, but habits 
+    of mind as well, and nothing changes slower.</q> <strong>Paul Graham</strong></p>
+  notes: Put these somewhere useful or cut from deck
+
+- heading: Let's Talk About Functions
+  notes: TODO Demo in other languages
 
 - style: slate
   heading: Higher-order Functions
@@ -20,6 +28,7 @@
   code:
     - (Return functions from functions)
     - higher-order2.js
+  notes: We demonstrate both function scope and closure here. Closures date back to 1975 and come from Scheme.
 
 - style: slate
   heading: Higher-order Functions
@@ -45,7 +54,7 @@
 
 - style: mold
   heading: Referential Transparency
-  notes: Let's talk about the concept and then React...
+  notes: TODO Let's talk about the concept and then React...
 
 - style: clay
   text: <q>Memoization is a simple optimization… Caching is like a deal with the devil.</q> <strong>Douglas Crockford</strong>
@@ -54,6 +63,7 @@
 - style: purple
   heading: Mutable State is Hard
   notes: |
+    TODO
     This is kind of mind blowing to someone used to iterating with i++
     jQuery soup
     React
@@ -62,7 +72,7 @@
     x = x + 1 (woah! wait! I thought x was 5?) ... oo encapsulation of state vs functional anti-state (react, etc might be good here)
 
 - heading: Recursion
-  notes: Example with head | tail summing
+  notes: TODO Example with head | tail summing
 
 - style: slate
   code: [(Haskell), fib.hs, (JavaScript), fib.js]
@@ -76,15 +86,41 @@
 
 - style: purple
   title: List Processing
-  text: [practical example of list processing with underscoreJS (grab some json, select a subset, and pluck out a value then reduce)]
-  notes: Example should include robots.
+  text: Here is some data
+  code: robot1.js
+  notes: Total height of Star Wars robots 
+
+- style: purple
+  title: List Processing
+  text: Underscore.js / Lo-Dash
+  code: robot2.js
+
+- style: purple
+  title: List Processing
+  text: Functions are building blocks
+  code: robot3.js
+  notes: Total height of Star Wars robots 
+
+- style: purple
+  title: List Processing
+  text: That's better
+  code: robot4.js
+
+- style: mold
+  title: Add sum curry
+  code: 
+    - (In oOo...)
+    - sum-curry1.js
+    - (Underscore's argument order is silly...)
+    - sum-curry2.js
 
 - style: clay
-  text: simple function composition (no curry)
+  code: 
+    - (Compose is the reusable chain)
+    - robot5.js
 
-- text: [currying, partial application with something like ajax get/post]
-
-- text: scoreunder for correct order. functions first! show bind example using both map and curry
+- style: purple
+  text: TODO composition example with react
 
 - heading: Learn More!
   bullets:
