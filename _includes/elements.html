@@ -39,7 +39,7 @@
       {% highlight haskell %}{% include {{file}} %}{% endhighlight %}
     {% when 'java' %}
       {% highlight java %}{% include {{file}} %}{% endhighlight %}
-    {% when 'lisp' or 'cl' or 'rkt' %}
+    {% when 'lisp' or 'cl' or 'rkt' or 'scm' %}
       {% highlight lisp %}{% include {{file}} %}{% endhighlight %}
     {% else %}
       {% highlight javascript %}{% include {{file}} %}{% endhighlight %}

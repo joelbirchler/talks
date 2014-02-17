@@ -2,8 +2,7 @@
   title: Function Oriented JavaScript
   notes: |
     I call this talk "Function Oriented JavaScript", but we're really going to be looking at other
-    functional languages and attempting to extract good habits from them and apply them to JavaScript. 
-
+    functional languages and attempting to extract good habits from them and apply them to JavaScript.
 
 - style: purple
   text: |
@@ -14,37 +13,38 @@
     of mind as well, and nothing changes slower.</q> <strong>Paul Graham</strong></p>
   notes: Put these somewhere useful or cut from deck
 
-- heading: Let's Talk About Functions
-  notes: TODO Demo in other languages
-
 - style: slate
-  heading: Higher-order Functions
+  heading: Assign functions to variables
   code:
-    - (Assign functions to variables)
+    - (Scheme)
+    - square.scm
+    - (JavaScript)
     - higher-order1.js
 
 - style: mold
-  heading: Higher-order Functions
+  heading: Pass functions to functions
   code:
-    - (Return functions from functions)
+    - (Scheme)
+    - map-odd.scm
+    - (JavaScript)
     - higher-order2.js
   notes: We demonstrate both function scope and closure here. Closures date back to 1975 and come from Scheme.
 
 - style: slate
-  heading: Higher-order Functions
+  heading: Return functions from functions
   code:
-    - (Pass functions to functions)
+    - (Scheme)
+    - multiply.scm
+    - (TODO Another Example)
+
+- style: slate
+  heading: Return functions from functions
+  code:
+    - (JavaScript)
     - higher-order3.js
 
-- style: mold
-  heading: Functions in your Functions
-  code:
-    - (<strong>Don't</strong> do this...)
-    - unnecessary1.js
-    - (<strong>Do</strong> this...)
-    - unnecessary2.js
-
-- text: f(x) = ?, g(x) = ?
+- style: clay
+  text: f(x) = ?, g(x) = ?
   notes: |
     Exercise with two people. One person is f(x) = 2x + 1 another is g(x) = 2x + y where y 
     is the last result from f(x). The audience's job is to guess the implementations by poking at the
@@ -72,7 +72,7 @@
     x = x + 1 (woah! wait! I thought x was 5?) ... oo encapsulation of state vs functional anti-state (react, etc might be good here)
 
 - heading: Recursion
-  notes: TODO Example with head | tail summing
+  code: count.erl
 
 - style: slate
   code: [(Haskell), fib.hs, (JavaScript), fib.js]
@@ -113,6 +113,12 @@
     - sum-curry1.js
     - (Underscore's argument order is silly...)
     - sum-curry2.js
+
+- style: mold
+  title: Add sum curry
+  code:
+    - (Haskell)
+    - add.hs
 
 - style: clay
   code: 
