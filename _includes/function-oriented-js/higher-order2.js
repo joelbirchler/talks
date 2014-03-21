@@ -1,5 +1,1 @@
-var tagger = function(name) {
-    return function(value) {
-        return '<' + name + '>' + value + '</' + name + '>';
-    }
-};
+[2, 3, 4, 5, 6].map(isOdd);

@@ -4,15 +4,6 @@
     I call this talk "Function Oriented JavaScript", but we're really going to be looking at other
     functional languages and attempting to extract good habits from them and apply them to JavaScript.
 
-- style: purple
-  text: |
-    <p><q>LISP is worth learning for a different reason — the profound enlightenment experience you will have 
-    when you finally get it.</q> <strong>Eric Raymond</strong></p>
-
-    <p><q>The reason everyone doesn't use [Lisp] is that programming languages are not merely technologies, but habits 
-    of mind as well, and nothing changes slower.</q> <strong>Paul Graham</strong></p>
-  notes: Put these somewhere useful or cut from deck
-
 - style: slate
   heading: Assign functions to variables
   code:
@@ -28,25 +19,20 @@
     - map-odd.scm
     - (JavaScript)
     - higher-order2.js
-  notes: We demonstrate both function scope and closure here. Closures date back to 1975 and come from Scheme.
 
 - style: slate
   heading: Return functions from functions
   code:
     - (Scheme)
     - multiply.scm
-    - (TODO Another Example)
-
-- style: slate
-  heading: Return functions from functions
-  code:
     - (JavaScript)
     - higher-order3.js
 
 - style: clay
   text: f(x) = ?, g(x) = ?
+  image: images/cat.jpg
   notes: |
-    Exercise with two people. One person is f(x) = 2x + 1 another is g(x) = 2x + y where y 
+    Exercise with two people. One person is f(x) = 2x + 1 another is g(x) = 2x + y where y
     is the last result from f(x). The audience's job is to guess the implementations by poking at the
     functions with inputs. The functions each take turns answering. The audience shouts "2!" and then
     f replies "5". The audience says "3?" and g replies "11!" (2*3 + 5). The goal is to demonstrate that
@@ -72,14 +58,14 @@
     x = x + 1 (woah! wait! I thought x was 5?) ... oo encapsulation of state vs functional anti-state (react, etc might be good here)
 
 - heading: Recursion
-  code: count.erl
+  code: [(Erlang), count.erl]
 
 - style: slate
   code: [(Haskell), fib.hs, (JavaScript), fib.js]
 
 - style: slate
   title: List Processing
-  code: 
+  code:
     - (In Racket...)
     - list-processing.rkt
   notes: Racket is a Lisp
@@ -88,7 +74,7 @@
   title: List Processing
   text: Here is some data
   code: robot1.js
-  notes: Total height of Star Wars robots 
+  notes: Total height of Star Wars robots
 
 - style: purple
   title: List Processing
@@ -99,7 +85,7 @@
   title: List Processing
   text: Functions are building blocks
   code: robot3.js
-  notes: Total height of Star Wars robots 
+  notes: Total height of Star Wars robots
 
 - style: purple
   title: List Processing
@@ -108,7 +94,7 @@
 
 - style: mold
   title: Add sum curry
-  code: 
+  code:
     - (In oOo...)
     - sum-curry1.js
     - (Underscore's argument order is silly...)
@@ -121,7 +107,7 @@
     - add.hs
 
 - style: clay
-  code: 
+  code:
     - (Compose is the reusable chain)
     - robot5.js
 

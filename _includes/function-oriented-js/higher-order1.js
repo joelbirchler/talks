@@ -1,3 +1,1 @@
-var tag = function(name, value) {
-    return '<' + name + '>' + value + '</' + name + '>';
-};
+var square = function(x) { return x * x; };

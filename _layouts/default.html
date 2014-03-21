@@ -11,7 +11,7 @@
   </head>
   <body>
     {% for slide in site.data[{{page.slides}}] %}
-      <section class="{{ slide.style }}">
+      <section class="{{ slide.style }}" {% if slide.image %}style="background-image: url({{slide.image}})"{% endif %}>
         {% include elements.html %}
       </section>
     {% endfor %}
