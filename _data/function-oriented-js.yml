@@ -39,12 +39,16 @@
     side effects are hard.
 
 - style: mold
-  heading: Referential Transparency
-  notes: TODO Let's talk about the concept and then React...
+  heading: NOT Referential Transparency
+  text: |
+    f('cat') => 'meow' <br/>
+    f('cat') => 'meow' <br/>
+    f('cat') => 'meow' <br/>
+    f('cat') => 'purrrrr'
 
 - style: clay
-  text: <q>Memoization is a simple optimization… Caching is like a deal with the devil.</q> <strong>Douglas Crockford</strong>
-  code: memo.js
+  text: Referential Transparency with ReactJS
+
 
 - style: purple
   heading: Mutable State is Hard
