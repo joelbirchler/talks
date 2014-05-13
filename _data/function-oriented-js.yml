@@ -4,14 +4,6 @@
     I call this talk "Function Oriented JavaScript", but we're really going to be looking at other
     functional languages and attempting to extract good habits from them and apply them to JavaScript.
 
-- heading: TODO
-  bullets:
-    - Remove Koala examples (use ES5 or Haskell or Underscore)
-    - Expand on currying (build example of why)
-    - Demo bind (both reasons) and _.partial
-    - React examples
-    - Mutatable state exercise
-
 - heading: λ
   code:
     - (Haskell)
@@ -27,8 +19,13 @@
     - lambda.rb
     - (Java 8)
     - lambda.java
+
+- heading: λ
+  code:
     - (JavaScript)
     - lambda.js
+    - (JavaScript - ECMA 6)
+    - lambda-es6.js
 
 - style: slate
   heading: Assign functions to variables
@@ -61,18 +58,28 @@
 
 - style: clay
   heading: Currying
-  text: |
-     -> x, y { x + y}.(2,4) is same as ->x { -> y { x + y }.(2)(4)
-     then move to autocurrying, then show haskell
+  code: curry1.js
 
-- style: mold
-  title: Add sum curry
-  code:
-    - (In oOo...)
-    - sum-curry1.js
-    - (Underscore's argument order is silly...)
-    - sum-curry2.js
-  notes: Explain currying better and use bind instead of oOo.
+- style: clay
+  code: curry2.js
+
+- style: purple
+  code: curry3.js
+
+- style: purple
+  code: curry4.js
+
+- style: purple
+  code: curry5.js
+
+- style: purple
+  code: curry6.js
+
+- style: slate
+  code: partial1.js
+
+- style: slate
+  code: partial2.js
 
 - style: mold
   title: Add sum curry
@@ -110,7 +117,7 @@
 
 - style: purple
   heading: Mutable State is Hard
-  notes: |
+  text: |
     TODO
     1. Show a standard mutative loop
     2. Show a recursive non-mutative loop (possibly building with cons, first, rest)
@@ -139,11 +146,6 @@
   code:
     - reduce-explained.js
 
-- style: slate
-  title: Filter
-  code:
-    - (filter-explained.js)
-
 - style: purple
   title: List Processing
   text: Here is some data
@@ -165,20 +167,21 @@
   title: List Processing
   text: That's better
   code: robot4.js
-  notes: Explain with chaining with var a = f(); var b = g(a); var c = h(b);
-
-- title: Remember currying?
-
-- title: Composition
-  text: |
-    TODO: show compose implementation
-    notes: compose(f, g, h) => f(g(h(x)))
 
 - style: clay
+  title: Composition
+  text: _.compose(f, g, h) is f(g(h(x)))
+  code: compose1.js
+
+- style: clay
+  title: The reusable chain
   code:
-    - (Compose is the reusable chain)
-    - (Can this look cleaner?)
     - robot5.js
+
+- style: clay
+  title: Curried Scoreunder
+  code:
+    - robot6.js
 
 - heading: Learn More!
   bullets:
