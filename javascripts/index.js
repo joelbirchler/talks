@@ -36,11 +36,8 @@ $(function() {
         jumpTo(parseInt(hash) || 0);
     };
 
-    $body
-        .click(jumpToNext)
-        .keypress(jumpToNext);
+    $body.keypress(jumpToNext);
 
-    
     //window.onhashchange = jumpToHash;
     window.onscroll = function() {
         var index = current();
@@ -48,5 +45,5 @@ $(function() {
     };
 
     jumpToHash();
-    
+
 });

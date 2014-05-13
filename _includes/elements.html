@@ -30,7 +30,7 @@
     {% capture file %}{{page.slides}}/{{code}}{% endcapture %}
     {% case lang %}
     {% when 'rb' %}
-      {% highlight ruby %}{% include  %}{% endhighlight %}
+      {% highlight ruby %}{% include {{file}} %}{% endhighlight %}
     {% when 'py' %}
       {% highlight python %}{% include {{file}} %}{% endhighlight %}
     {% when 'er' %}

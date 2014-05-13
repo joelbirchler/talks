@@ -4,29 +4,81 @@
     I call this talk "Function Oriented JavaScript", but we're really going to be looking at other
     functional languages and attempting to extract good habits from them and apply them to JavaScript.
 
+- heading: TODO
+  bullets:
+    - Remove Koala examples (use ES5 or Haskell or Underscore)
+    - Expand on currying (build example of why)
+    - Demo bind (both reasons) and _.partial
+    - React examples
+    - Mutatable state exercise
+
+- heading: λ
+  code:
+    - (Haskell)
+    - lambda.hs
+    - (Clojure)
+    - lambda.clj
+    - (Erlang)
+    - lambda.erl
+
+- heading: λ
+  code:
+    - (Ruby 1.9)
+    - lambda.rb
+    - (Java 8)
+    - lambda.java
+    - (JavaScript)
+    - lambda.js
+
 - style: slate
   heading: Assign functions to variables
   code:
-    - (Scheme)
-    - square.scm
+    - (Clojure)
+    - square.clj
     - (JavaScript)
-    - higher-order1.js
+    - square.js
 
 - style: mold
   heading: Pass functions to functions
   code:
-    - (Scheme)
-    - map-odd.scm
+    - (Clojure)
+    - square-map.clj
     - (JavaScript)
-    - higher-order2.js
+    - square-map.js
 
 - style: slate
   heading: Return functions from functions
   code:
-    - (Scheme)
-    - multiply.scm
+    - (Clojure)
+    - multiply-by.clj
+
+- style: mold
+  heading: Return functions from functions
+  code:
     - (JavaScript)
-    - higher-order3.js
+    - multiply-by.js
+    - debounce.js
+
+- style: clay
+  heading: Currying
+  text: |
+     -> x, y { x + y}.(2,4) is same as ->x { -> y { x + y }.(2)(4)
+     then move to autocurrying, then show haskell
+
+- style: mold
+  title: Add sum curry
+  code:
+    - (In oOo...)
+    - sum-curry1.js
+    - (Underscore's argument order is silly...)
+    - sum-curry2.js
+  notes: Explain currying better and use bind instead of oOo.
+
+- style: mold
+  title: Add sum curry
+  code:
+    - (Haskell)
+    - add.hs
 
 - style: clay
   text: f(x) = ?, g(x) = ?
@@ -35,44 +87,62 @@
     Exercise with two people. One person is f(x) = 2x + 1 another is g(x) = 2x + y where y
     is the last result from f(x). The audience's job is to guess the implementations by poking at the
     functions with inputs. The functions each take turns answering. The audience shouts "2!" and then
-    f replies "5". The audience says "3?" and g replies "11!" (2*3 + 5). The goal is to demonstrate that
+    f replies "5". The audience says "3?" and g replies "11!" (2 * 3 + 5). The goal is to demonstrate that
     side effects are hard.
 
 - style: mold
+  heading: Referential Transparency
+  text: |
+    f('cat') => 'meow' <br/>
+    f('cat') => 'meow' <br/>
+    f('cat') => 'meow' <br/>
+
+- style: clay
   heading: NOT Referential Transparency
   text: |
     f('cat') => 'meow' <br/>
     f('cat') => 'meow' <br/>
     f('cat') => 'meow' <br/>
-    f('cat') => 'purrrrr'
+    f('cat') => 'purrrrrr'
 
-- style: clay
+- style: slate
   text: Referential Transparency with ReactJS
-
 
 - style: purple
   heading: Mutable State is Hard
   notes: |
     TODO
-    This is kind of mind blowing to someone used to iterating with i++
-    jQuery soup
-    React
-    http://prog21.dadgum.com/25.html
-    x = 5
-    x = x + 1 (woah! wait! I thought x was 5?) ... oo encapsulation of state vs functional anti-state (react, etc might be good here)
+    1. Show a standard mutative loop
+    2. Show a recursive non-mutative loop (possibly building with cons, first, rest)
+    3. WHY??
+        x = 5; x = x + 1 (woah! wait! I thought x was 5?) ... oo encapsulation of state vs functional anti-state (react, etc might be good here)
+        jQuery soup
+    4. React
 
 - heading: Recursion
-  code: [(Erlang), count.erl]
-
-- style: slate
+  style: slate
   code: [(Haskell), fib.hs, (JavaScript), fib.js]
 
 - style: slate
   title: List Processing
   code:
-    - (In Racket...)
-    - list-processing.rkt
-  notes: Racket is a Lisp
+    - (Clojure)
+    - list-processing.clj
+
+- style: slate
+  title: Map
+  code:
+    - map-explained.js
+
+- style: slate
+  title: Reduce
+  code:
+    - reduce-explained.js
+
+- style: slate
+  title: Filter
+  code:
+    - (filter-explained.js)
 
 - style: purple
   title: List Processing
@@ -95,28 +165,20 @@
   title: List Processing
   text: That's better
   code: robot4.js
+  notes: Explain with chaining with var a = f(); var b = g(a); var c = h(b);
 
-- style: mold
-  title: Add sum curry
-  code:
-    - (In oOo...)
-    - sum-curry1.js
-    - (Underscore's argument order is silly...)
-    - sum-curry2.js
+- title: Remember currying?
 
-- style: mold
-  title: Add sum curry
-  code:
-    - (Haskell)
-    - add.hs
+- title: Composition
+  text: |
+    TODO: show compose implementation
+    notes: compose(f, g, h) => f(g(h(x)))
 
 - style: clay
   code:
     - (Compose is the reusable chain)
+    - (Can this look cleaner?)
     - robot5.js
-
-- style: purple
-  text: TODO composition example with react
 
 - heading: Learn More!
   bullets:
