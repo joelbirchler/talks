@@ -130,21 +130,6 @@
     - accidental reference passing (and leaks)
     - complex test setups
 
-- style: purple
-  heading: Mutable State is Hard
-  text: |
-      OO encapsulation of state<br/>
-      vs<br/>
-      functional anti-state
-
-- style: purple
-  heading: Mutable State is Hard
-  text: |
-      OO encapsulation of state<br/>
-      vs<br/>
-      functional anti-state<br/></br/>
-      Middle ground: *isolate* state
-
 - heading: Recursion
   style: slate
   code: [(Haskell), fib.hs, (JavaScript), fib.js]
