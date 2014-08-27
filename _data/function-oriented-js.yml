@@ -4,6 +4,8 @@
     I call this talk "Function Oriented JavaScript", but we're really going to be looking at other
     functional languages and attempting to extract good habits from them and apply them to JavaScript.
 
+- image: images/moores-law.jpg
+
 - heading: λ
   code:
     - (Haskell)
@@ -17,8 +19,15 @@
   code:
     - (Ruby 1.9)
     - lambda.rb
+    - (Python 3)
+    - lambda.py
+
+- heading: λ
+  code:
     - (Java 8)
     - lambda.java
+    - (C♯)
+    - lambda.cs
 
 - heading: λ
   code:
